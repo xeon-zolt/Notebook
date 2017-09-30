@@ -17,4 +17,4 @@ may not always work depends on hosts which have made it into your arp tables
 
 final command after combining above
 
-```$ sudo nmap -sP $(nmcli | grep -Po '(?<=inet4\s)[^\s]*') | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'```
+```sudo nmap -sP $(nmcli | grep -Po '(?<=inet4\s)[^\s]*') | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'```
