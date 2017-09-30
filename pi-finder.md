@@ -15,9 +15,11 @@ may not always work depends on hosts which have made it into your arp tables
 
 ```arp -na | grep -i b8:27:eb ```
 
+# Finally
 final command after combining above
 
 ```sudo nmap -sP $(nmcli | grep -Po '(?<=inet4\s)[^\s]*') | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'```
- and can be used for ssh like or maybe you can add sshpass or create a script with password using expect or use sshkey 
+
+and can be used for ssh like or maybe you can add sshpass or create a script with password using expect or use sshkey 
  
 ```ssh alarm@$(sudo nmap -sP $(nmcli | grep -Po '(?<=inet4\s)[^\s]*') | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}')```
