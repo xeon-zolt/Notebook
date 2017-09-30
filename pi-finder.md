@@ -14,3 +14,7 @@ The 192.168.1.179 is the Raspberry Pi IP address on you network.
 may not always work depends on hosts which have made it into your arp tables
 
 ```arp -na | grep -i b8:27:eb ```
+
+final command after combining above
+
+```$ sudo nmap -sP $(nmcli | grep -Po '(?<=inet4\s)[^\s]*') | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'```
