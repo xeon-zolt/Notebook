@@ -1,3 +1,10 @@
+# Freeswitch
+- https://freeswitch.org/confluence/display/FREESWITCH/FreeSWITCH+Explained
+ 
+#### docker links
+- https://hub.docker.com/r/bettervoice/freeswitch-container/
+- https://github.com/praekeltfoundation/docker-freeswitch
+
 #### getting users
 ```
 show registrations
@@ -25,3 +32,5 @@ originate --> command
 originate sofia/internal/sip:1001@10.60.18.33:35722 &bridge(sofia/internal/sip:1002@10.60.18.40:63559)
 ```
 
+#### Hip Chat
+- https://hipchat.freeswitch.org/gUdAgy0m6
