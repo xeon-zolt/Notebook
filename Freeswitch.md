@@ -32,5 +32,10 @@ originate --> command
 originate sofia/internal/sip:1001@10.60.18.33:35722 &bridge(sofia/internal/sip:1002@10.60.18.40:63559)
 ```
 
+
+parallel calling using bridge 
+```
+/usr/local/freeswitch/bin/fs_cli -x "originate {origination_caller_id_number=41257901}freetdm/outgoing/R/09958150419 &bridge(freetdm/outgoing/R/08800528807:_:freetdm/outgoing/R/09899790092)"
+```
 #### Hip Chat
 - https://hipchat.freeswitch.org/gUdAgy0m6
