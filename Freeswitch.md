@@ -37,5 +37,13 @@ parallel calling using bridge
 ```
 /usr/local/freeswitch/bin/fs_cli -x "originate {origination_caller_id_number=41257901}freetdm/outgoing/R/09958150419 &bridge(freetdm/outgoing/R/08800528807:_:freetdm/outgoing/R/09899790092)"
 ```
+### seeing events
+```
+nc <server_url> <port>
+
+password auth ConCluecon
+
+events plain all
+```
 #### Hip Chat
 - https://hipchat.freeswitch.org/gUdAgy0m6
